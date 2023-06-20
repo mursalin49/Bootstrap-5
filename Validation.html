@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+<body >
+    <div class="container">
+    <form class="row g-2 needs-validation"novalidate>
+        <div class=col-md-6>
+            <label for=" ">Email</label>
+            <input type="Email" class="form-control" placeholder="www.xyz@gmail.com" required>
+            <div class="valid-feedback">
+                <p>Your Email is valid</p>
+            </div>
+            <div class="invalid-feedback">
+                <p>Your must put an message</p>
+            </div>
+        </div>
+        <div class=col-md-6>
+            <label for="">Password</label>
+            <input type="password" class="form-control" placeholder="Nirob@12" required>
+            <div class="valid-feedback">
+                <p>Your password is valid</p>
+            </div>
+            <div class="invalid-feedback">
+                <p>Your must put an message</p>
+            </div> 
+        </div>
+         <div class=col-md-12 mt-2>
+            <label for="">Address</label>
+            <input type="text" class="form-control" placeholder="dhaka road 22" required>
+            <div class="valid-feedback">
+                <p>Your address is valid</p>
+            </div>
+            <div class="invalid-feedback">
+                <p>Your must put an message</p>
+            </div> 
+        </div>
+        <div class=col-md-12 mt-2>
+            <label for="">Address 2</label>
+            <input type="text" class="form-control" placeholder="netrakona road 22" required>
+            <div class="valid-feedback">
+                <p>Your address is valid</p>
+            </div>
+            <div class="invalid-feedback">
+                <p>Your must put an message</p>
+            </div> 
+        </div>
+        <div class=col-md-6>
+            <label for="">city</label>
+            <input type="text" class="form-control" placeholder="netrakona" required>
+            <div class="valid-feedback">
+                <p>Your city is valid</p>
+            </div>
+            <div class="invalid-feedback">
+                <p>Your must put an message</p>
+            </div> 
+        </div>
+        <div class=col-md-4>
+            <label for="">State</label>
+            <select class="form-select">
+                <option selected>Choose</option>
+                <option select>netrakona</option>
+                 <option select>shalthi</option>
+                 <option select>purbadhola</option>
+            </select>
+        </div>
+        <div class=col-md-2>
+            <label for="">Zip</label>
+            <input type="text" class="form-control"placeholder="2400"  required>
+            <div class="valid-feedback">
+                <p>Your zip is valid</p>
+            </div>
+            <div class="invalid-feedback">
+                <p>Your must put an message</p>
+            </div> 
+        </div>
+        <div class=col-md-12 >
+            <div class="form-check"></div>
+            <input type="checkbox" class="form-check-input" id="clickMe" required>
+            <label for="clickMe" class="form-check-label"> Check Me Out</label> 
+            <div class="valid-feedback">
+                <p></p>
+            </div>
+            <div class="invalid-feedback">
+                <p>Your must agree before submit </p>
+            </div> 
+        </div>
+        <div class="col-md-12">
+            <button class="btn btn-primary">submit</button>
+        </div>
+</form>
+<script>// Example starter JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+      'use strict'
+    
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll('.needs-validation')
+    
+      // Loop over them and prevent submission
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+    
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()</script>
+</div>
+</body>
+</html>
